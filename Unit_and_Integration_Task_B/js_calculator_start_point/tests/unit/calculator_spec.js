@@ -19,4 +19,16 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 3);
   });
 
+  it('should be able to multiply two numbers', function(){
+    calculator.previousTotal = 3;
+    calculator.multiply(5);
+    assert.strictEqual(calculator.runningTotal, 15);
+  });
+
+
+  // calculator.divide() - divide 21 by 7 and get 3
+  // calculator.numberClick() - concatenate multiple number button clicks
+  // calculator.operatorClick() - chain multiple operations together
+  // calculator.clearClick() - clear the running total without affecting the calculation
+
 });

@@ -35,7 +35,17 @@ describe('calculator', function () {
     calculator.numberClick(5);
     calculator.numberClick(5);
     assert.strictEqual(calculator.runningTotal, 55);
-  })
+  });
+
+  it('should be able to chain multiple operations together', function(){
+    calculator.numberClick(5);
+    calculator.operatorClick('*');
+    calculator.numberClick(5);
+    calculator.operatorClick('-');
+    calculator.numberClick(5);
+    calculator.operatorClick('=');
+    assert.strictEqual(calculator.runningTotal, 20);
+  });
 
 
   // calculator.operatorClick() - chain multiple operations together

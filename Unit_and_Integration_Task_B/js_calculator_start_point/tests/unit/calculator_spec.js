@@ -25,8 +25,13 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 15);
   });
 
+  it('should be able to divide two numbers', function(){
+    calculator.previousTotal = 21;
+    calculator.divide(7);
+    assert.strictEqual(calculator.runningTotal, 3);
+  });
 
-  // calculator.divide() - divide 21 by 7 and get 3
+
   // calculator.numberClick() - concatenate multiple number button clicks
   // calculator.operatorClick() - chain multiple operations together
   // calculator.clearClick() - clear the running total without affecting the calculation

@@ -47,8 +47,13 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 20);
   });
 
-
-  // calculator.operatorClick() - chain multiple operations together
-  // calculator.clearClick() - clear the running total without affecting the calculation
+  it('should be able to clear the running total without affecting the calculation', function(){
+    calculator.numberClick(5);
+    calculator.operatorClick('+');
+    calculator.clearClick();
+    calculator.numberClick(5);
+    calculator.operatorClick('=');
+    assert.strictEqual(calculator.runningTotal, 10);
+  });
 
 });

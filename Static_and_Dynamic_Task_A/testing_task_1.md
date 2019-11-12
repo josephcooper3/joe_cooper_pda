@@ -10,6 +10,7 @@ class CardGame
   def checkforAce(card)
   # method name should be camelCase
     if card.value = 1
+    # should be == (seen after dynamic testing started)
       return true
     else
       return false
@@ -18,6 +19,7 @@ class CardGame
 
   dif highest_card(card1 card2)
   # dif should be def
+  # missing comma (seen after dynamic testing started)
   if card1.value > card2.value
     return card
     # should return card1

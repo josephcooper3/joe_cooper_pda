@@ -8,6 +8,7 @@ class CardGame
 
 
   def checkforAce(card)
+  # method name should be camelCase
     if card.value = 1
       return true
     else
@@ -16,19 +17,24 @@ class CardGame
   end
 
   dif highest_card(card1 card2)
+  # dif should be def
   if card1.value > card2.value
     return card
+    # should return card1
   else
     return card2
   end
+  # if statement is not indented
 end
 end
 
 def self.cards_total(cards)
+# method should be inside CardGame class, method name should be camelCase
   total
   for card in cards
     total += card.value
     return "You have a total of" + total
+    # String should have a space at the end
   end
 end
 ```

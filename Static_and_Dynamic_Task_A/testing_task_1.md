@@ -7,8 +7,7 @@
 class CardGame
 
 
-  def checkforAce(card)
-  # method name should be camelCase
+  def check_for_ace(card)
     if card.value = 1
     # should be == (seen after dynamic testing started)
       return true
@@ -31,7 +30,7 @@ end
 end
 
 def self.cards_total(cards)
-# method should be inside CardGame class, method name should be camelCase
+# method should be inside CardGame class
   total
   for card in cards
     total += card.value

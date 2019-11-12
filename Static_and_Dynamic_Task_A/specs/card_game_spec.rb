@@ -5,10 +5,10 @@ require_relative('../models/card')
 
 class CardGameTest < MiniTest::Test
 
-  def test_checkForAce
+  def test_check_for_ace
     cardGame = CardGame.new()
     card = Card.new('ace', 1)
-    assert_equal(true, cardGame.checkForAce(card))
+    assert_equal(true, cardGame.check_for_ace(card))
   end
 
 end

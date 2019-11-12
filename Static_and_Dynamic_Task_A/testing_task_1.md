@@ -32,10 +32,13 @@ end
 def self.cards_total(cards)
 # method should be inside CardGame class
   total
+  # needs to be set to 0 first (seen after dynamic testing started)
   for card in cards
     total += card.value
     return "You have a total of" + total
     # String should have a space at the end
+    # Total needs to be converted to String (seen after dynamic testing started)
+    # Return should be after the loop not within it (seen after dynamic testing started)
   end
 end
 ```
